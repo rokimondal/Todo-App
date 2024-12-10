@@ -17,6 +17,7 @@ module.exports = {
       fontFamily: {
         sans: ["Inter", "sans-serif"],
         serif: ["Abhaya Libre", "serif"],
+        Montserrat: ["Montserrat", "sans-serif"]
       },
     },
   },
