@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { TaskContext } from "@/context";
 export default function Sidebar() {
     const{setOpenAddTask}=useContext(TaskContext);
+    const{setOpenSearch}=useContext(TaskContext);
     return <div className=" min-h-[calc(100vh-2rem)] w-80 h- bg-gray-200 m-4 p-4 rounded-lg  sm:w-60 md:w-80 flex flex-col justify-between">
         <div >
             <div className="flex justify-between items-center mb-2 text-gray-600">
@@ -16,7 +17,7 @@ export default function Sidebar() {
             <div className="mb-2">
                 <ul className="space-y-1">
                     <li className="hover:bg-gray-300 rounded ">
-                        <button href="#" className="text-base px-2 py-1 flex items-center text-gray-500 w-full">
+                        <button href="#" className="text-base px-2 py-1 flex items-center text-gray-500 w-full" onClick={()=>setOpenSearch(true)}>
                             <FaSearch className="mr-3" />Search
                         </button>
                     </li>

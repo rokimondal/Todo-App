@@ -41,6 +41,8 @@ export default function AddTask() {
         const profileType = [...new Set(formData.profileType.value.trim().split(/\s+/))];
         const tags = [...new Set(formData.tags.value.trim().split(/\s+/))];
         const groups = [...new Set(formData.groups.value.trim().split(/\s+/))];
+        console.log(date);
+        
         console.log(title + ", " + description + ", " + date + ", " + profileType + ", " + tags + ", ", groups+', ');
     }
 
@@ -87,14 +89,15 @@ export default function AddTask() {
                                     }}>
                             <div className="flex rounded-md w-36 items-center bg-white  p-1">
                                 <FaListUl
-                                    className="text-gray-500 font-semibold text-2xl mr-1 cursor-pointer"
+                                    className="text-gray-500 font-semibold text-2xl mr-2 cursor-pointer "
                                 />
                                 <textarea
                                     name="profileType"
                                     value={list}
+                                    placeholder="Lists"
                                     rows={1}
                                     readOnly
-                                    className="w-full outline-none text-gray-900 placeholder:font-light bg-transparent cursor-default rounded resize-none overflow-auto"
+                                    className="w-full outline-none text-gray-900 placeholder:font-light bg-transparent cursor-default rounded resize-none overflow-auto placeholder:font-medium"
                                     
                                 />
 
@@ -121,14 +124,15 @@ export default function AddTask() {
                                     }}>
                             <div className="flex rounded-md w-36 items-center bg-white  p-1">
                                 <FaTags
-                                    className="text-gray-500 font-semibold text-2xl mr-1 cursor-pointer"
+                                    className="text-gray-500 font-semibold text-2xl mr-2 cursor-pointer"
                                 />
                                 <textarea
                                     name="tags"
+                                    placeholder="Tags"
                                     value={tag}
                                     rows={1}
                                     readOnly
-                                    className="w-full outline-none text-gray-900 placeholder:font-light bg-transparent cursor-default rounded resize-none overflow-auto"
+                                    className="w-full outline-none text-gray-900 placeholder:font-light bg-transparent cursor-default rounded resize-none overflow-auto placeholder:font-medium"
                                     
                                 />
 
@@ -155,14 +159,15 @@ export default function AddTask() {
                                     }}>
                             <div className="flex rounded-md w-36 items-center bg-white  p-1">
                                 <HiMiniUserGroup
-                                    className="text-gray-500 font-semibold text-2xl mr-1 cursor-pointer"
+                                    className="text-gray-500 font-semibold text-2xl mr-2 cursor-pointer"
                                 />
                                 <textarea
                                     name="groups"
+                                    placeholder="Groups"
                                     value={groups}
                                     rows={1}
                                     readOnly
-                                    className="w-full outline-none text-gray-900 placeholder:font-light bg-transparent cursor-default rounded resize-none overflow-auto"
+                                    className="w-full outline-none text-gray-900 placeholder:font-light bg-transparent cursor-default rounded resize-none overflow-auto placeholder:font-medium"
                                     
                                 />
 
