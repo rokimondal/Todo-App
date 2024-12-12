@@ -12,7 +12,9 @@ const Today = ({ TodayTasks }) => {
             <h2 className="text-3xl font-Montserrat font-medium">Today</h2>
             <div className=" font-semibold text-xl text-gray-500 flex flex-row items-center justify-center w-fit hover:text-gray-600 hover:cursor-pointer" onClick={() => setOpenAddTask(true)}><FaPlus className="mr-3" />Add Task</div>
         </div>
-        {TodayTasks.length >0 && <List TodayTasks={TodayTasks} />}
+        <div className='border rounded-md'>
+        {TodayTasks.length >0 && <List Tasks={TodayTasks} />}
+        </div>
     </>
     )
 }

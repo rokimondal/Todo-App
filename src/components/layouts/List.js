@@ -2,10 +2,10 @@ import Link from 'next/link';
 import React from 'react'
 import { BsArrowRightSquare } from "react-icons/bs";
 
-const List = ({ TodayTasks }) => {
+const List = ({ Tasks }) => {
     return (
-        <div className='border rounded-md mx-5 my-2 p-10'>
-            {TodayTasks.map((task, index) => {
+        <div className=' rounded-md mx-3 p-3'>
+            {Tasks.map((task, index) => {
                 if (task.status) {
                     return (<div key={task._id}>
                         {index != 0 && <div className='border m-2 rounded-lg'></div>}
