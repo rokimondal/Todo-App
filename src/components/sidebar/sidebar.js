@@ -48,12 +48,14 @@ export default function Sidebar() {
                             <div className="bg-gray-300 rounded w-7 text-center text-sm">11</div>
                         </li>
                     </Link>
-                    <li className="flex justify-between items-center hover:bg-gray-300 rounded ">
-                        <button className="text-base flex items-center text-gray-500 px-2 py-1 w-full">
-                            <FaStickyNote className="mr-3" />Sticky Wall
-                        </button>
-                        <div className="bg-gray-300 rounded w-7 text-center  text-sm">9</div>
-                    </li>
+                    <Link href={'/sticky'}>
+                        <li className="flex justify-between items-center hover:bg-gray-300 rounded ">
+                            <button className="text-base flex items-center text-gray-500 px-2 py-1 w-full">
+                                <FaStickyNote className="mr-3" />Sticky Wall
+                            </button>
+                            <div className="bg-gray-300 rounded w-7 text-center  text-sm">9</div>
+                        </li>
+                    </Link>
                 </ul>
             </div>
 

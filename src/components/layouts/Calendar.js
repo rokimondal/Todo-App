@@ -24,7 +24,7 @@ const Calendar = ({ Tasks }) => {
     {filteredTask.length > 0 && <div className='w-full lg:w-2/3 border mt-5 rounded-md'>
     <List Tasks={filteredTask}/>
     </div>}
-    {filteredTask.length == 0 && <p>No Tasks found</p>}
+    {filteredTask.length == 0 && <p className='m-5'>No Tasks found</p>}
     </div>
   );
 }
