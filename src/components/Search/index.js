@@ -148,7 +148,7 @@ const Search = () => {
             </div>
             <div className='max-h-64 h-64 bg-transparent'>
                 {searchQuery == '' ? <div className='flex flex-col bg-slate-200 rounded-lg w-72 md:w-[30rem] lg:w-[36rem] m-1'>
-                    <Link href={"/today"} className='px-2 py-1 mt-1 text-left text-gray-600 flex flex-row gap-2 items-center hover:text-gray-800'>
+                    <Link href={"/"} className='px-2 py-1 mt-1 text-left text-gray-600 flex flex-row gap-2 items-center hover:text-gray-800'>
                         <FaTasks />
                         Go To Today
                     </Link>
