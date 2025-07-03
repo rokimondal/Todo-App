@@ -268,10 +268,10 @@ const upcoming = () => {
     }
   ];
 
-  const date = new Date().toLocaleDateString("de-DE").split('.').join('/');
+  // const date = new Date().toLocaleDateString("de-DE").split('.').join('/');
 
-  const upcomingTask = tasks.filter(task => task.date >= date);
-  // const upcomingTask = tasks;
+  // const upcomingTask = tasks.filter(task => task.date >= date);
+  const upcomingTask = tasks;
 
   return (
     <div className=" mt-4 p-2 rounded-lg w-full">
